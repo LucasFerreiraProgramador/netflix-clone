@@ -1,4 +1,4 @@
-# Netflix Clone - Projeto de Estudante
+# Netflix Clone 
 
 Um clone funcional da Netflix criado como projeto de aprendizado de **React**, **TypeScript**, **Tailwind CSS** e **React Router**. Este projeto demonstra conceitos fundamentais de desenvolvimento web moderno com uma abordagem didática e simplificada.
 
