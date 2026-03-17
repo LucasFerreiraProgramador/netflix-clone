@@ -2,7 +2,7 @@
 
 Um clone funcional da Netflix criado como projeto de aprendizado de **React**, **TypeScript**, **Tailwind CSS** e **React Router**. Este projeto demonstra conceitos fundamentais de desenvolvimento web moderno com uma abordagem didática e simplificada.
 
-## TESTE O PROJETO AQUI: https://netflix-clone-puce-three.vercel.app/login
+## TESTE O PROJETO AQUI: https://netflix-clone-puce-three.vercel.app/
 
 ## 📋 Características
 
