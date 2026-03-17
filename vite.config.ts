@@ -6,6 +6,11 @@ import path from "node:path";
 import { defineConfig, type Plugin, type ViteDevServer } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
+// =============================================================================
+// Manus Debug Collector - Vite Plugin
+// Writes browser logs directly to files, trimmed when exceeding size limit
+// =============================================================================
+
 const PROJECT_ROOT = import.meta.dirname;
 const LOG_DIR = path.join(PROJECT_ROOT, ".manus-logs");
 const MAX_LOG_SIZE_BYTES = 1 * 1024 * 1024; // 1MB per log file
@@ -63,6 +68,12 @@ function writeToLogFile(source: LogSource, entries: unknown[]) {
   trimLogFile(logPath, MAX_LOG_SIZE_BYTES);
 }
 
+/**
+ * Vite plugin to collect browser debug logs
+ * - POST /__manus__/logs: Browser sends logs, written directly to files
+ * - Files: browserConsole.log, networkRequests.log, sessionReplay.log
+ * - Auto-trimmed when exceeding 1MB (keeps newest entries)
+ */
 function vitePluginManusDebugCollector(): Plugin {
   return {
     name: "manus-debug-collector",
@@ -87,6 +98,7 @@ function vitePluginManusDebugCollector(): Plugin {
     },
 
     configureServer(server: ViteDevServer) {
+      // POST /__manus__/logs: Browser sends logs (written directly to files)
       server.middlewares.use("/__manus__/logs", (req, res, next) => {
         if (req.method !== "POST") {
           return next();
