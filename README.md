@@ -2,6 +2,8 @@
 
 Um clone funcional da Netflix criado como projeto de aprendizado de **React**, **TypeScript**, **Tailwind CSS** e **React Router**. Este projeto demonstra conceitos fundamentais de desenvolvimento web moderno com uma abordagem didática e simplificada.
 
+## TESTE O PROJETO AQUI: https://netflix-clone-puce-three.vercel.app/login
+
 ## 📋 Características
 
 ### Funcionalidades Implementadas
@@ -59,7 +61,6 @@ pnpm dev
 npm run dev
 ```
 
-O servidor estará disponível em `http://localhost:3000`
 
 ### Build para Produção
 
@@ -238,10 +239,11 @@ Este projeto é fornecido como material educacional. Sinta-se livre para usar, m
 
 ## 👨‍💻 Autor
 
-Criado como projeto de estudante para aprendizado de desenvolvimento web moderno com React e TypeScript.
+- [Lucas Ferreira](https://lucas.ferreiradev.com/)
+- [GitHub](https://github.com/LucasFerreiraProgramador)
+- [LinkedIn](https://www.linkedin.com/in/lucasferreira-dev-front-end/)
 
----
+## 📄 Licença
+Este projeto foi desenvolvido para fins de estudo e prática de desenvolvimento Front-End.
 
-**Versão**: 1.0.0  
-**Data**: Março de 2026  
-**Status**: Projeto de Aprendizado ✨
+## 🚀 Let's code! 🚀
