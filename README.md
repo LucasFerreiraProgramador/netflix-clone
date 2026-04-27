@@ -33,7 +33,7 @@ O projeto utiliza dados estáticos (mockados) em vez de uma API real. Os filmes 
 - Interestelar
 
 ## 🚀 Como Executar
-
+                    
 ### Pré-requisitos
 
 - Node.js 18+ instalado
